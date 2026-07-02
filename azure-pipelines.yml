@@ -31,4 +31,10 @@ steps:
     ArtifactName: 'artifact1'
     publishLocation: 'Container'
 
+- task: Docker@2
+  inputs:
+    containerRegistry: 'az-container-con'
+    repository: 'myapp'
+    command: 'buildAndPush'
+    Dockerfile: '$(System.DefaultWorkingDirectory)/Dockerfile'
     
