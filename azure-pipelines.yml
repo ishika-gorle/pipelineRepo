@@ -36,5 +36,5 @@ steps:
     containerRegistry: 'az-container-con'
     repository: 'myapp'
     command: 'buildAndPush'
-    Dockerfile: '$(System.DefaultWorkingDirectory)/Dockerfile'
+    Dockerfile: '**/Dockerfile'
     
